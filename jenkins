@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage('Pulling') {
+            steps {
+               git url:"https://github.com/vijaysirra/viz.git"
+            }
+        }
+        stage('Build') {
+            steps {
+                sh "mvn clean package"
+            }
+        }
+         stage('Deployment') {
+            steps {
+                sh "mvn deploy"
+            }
+        }
+        stage('Message') {
+            steps {
+                echo "hi, hello, how are u..?"
+            }
+        }
+    }
+}
