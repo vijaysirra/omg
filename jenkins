@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pulling') {
             steps {
-               git url:"https://github.com/vijaysirra/viz.git"
+               git url:"https://github.com/vijaysirra/omg.git"
             }
         }
         stage('Build') {
