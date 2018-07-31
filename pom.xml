@@ -22,6 +22,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>CounterWebApp</finalName>
+    <finalName>CounterWebApp1</finalName>
   </build>
 </project>
